@@ -68,24 +68,4 @@ export default function App() {
     },
   ]);
   return <RouterProvider router={router} />;
-  // return (
-  //   <Router>
-  //     <nav>
-  //       <ul>
-  //         <li>
-  //           <Link to={`/`}>Home</Link>
-  //         </li>
-  //         <li>
-  //           <Link to={`content`}>content</Link>
-  //         </li>
-  //       </ul>
-  //     </nav>
-  //     <Routes>
-  //       <Route path="/" element={<HomePage />} />
-  //       <Route index element={<HomePage />} />
-  //       <Route path="content" element={<ContentPage />} />
-  //       <Route path="content/count" element={<Count />} />
-  //     </Routes>
-  //   </Router>
-  // );
 }

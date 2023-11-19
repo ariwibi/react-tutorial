@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
-    <nav>
-      <ul>
+    <nav className="nav">
+      <div className="title">ariWibi</div>
+      <ul className="nav-list">
         <li>
-          <Link to={`/`}>Home</Link>
+          <Link to={`/`} className="nav-title">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to={`/content`}>Content </Link>
+          <Link to={`/content`} className="nav-title">
+            Content{" "}
+          </Link>
+        </li>
+        <li>
+          <Link to={`/content`} className="nav-title">
+            About Me{" "}
+          </Link>
         </li>
       </ul>
     </nav>

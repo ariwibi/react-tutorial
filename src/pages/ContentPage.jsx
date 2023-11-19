@@ -9,119 +9,51 @@ import { Outlet } from "react-router-dom";
 export default function ContentPage() {
   return (
     <>
-      <ul style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link style={{ textDecoration: "none", color: "white" }} to={`count`}>
+      <ul className="list">
+        <li className="item">
+          <Link className="title" to={`count`}>
             Count
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`reactUseEffect`}>
+        <li className="item">
+          <Link className="title" to={`reactUseEffect`}>
             UseEffect
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`conditionRendering`}>
+        <li className="item">
+          <Link className="title" to={`conditionRendering`}>
             Condition Rendering
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`reactList`}>
+        <li className="item">
+          <Link className="title" to={`reactList`}>
             React List
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`reactForm`}>
+        <li className="item">
+          <Link className="title" to={`reactForm`}>
             React From
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`pureComponent`}>
+        <li className="item">
+          <Link className="title" to={`pureComponent`}>
             Keep component pure
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`reactFetch`}>
+        <li className="item">
+          <Link className="title" to={`reactFetch`}>
             React Fetching
           </Link>
         </li>
-        <li
-          style={{
-            listStyle: "none",
-
-            backgroundColor: "black",
-            padding: 5,
-            borderRadius: 5,
-          }}>
-          <Link
-            style={{ textDecoration: "none", color: "white" }}
-            to={`todoList`}>
+        <li className="item">
+          <Link className="title" to={`todoList`}>
             Todo List
           </Link>
         </li>
       </ul>
-      <Outlet />
+      <div className="content-items">
+        <Outlet />
+      </div>
     </>
   );
 }
