@@ -50,6 +50,11 @@ export default function ContentPage() {
             Todo List
           </Link>
         </li>
+        <li className="item">
+          <Link className="title" to={`params`}>
+            React Params
+          </Link>
+        </li>
       </ul>
       <div className="content-items">
         <Outlet />

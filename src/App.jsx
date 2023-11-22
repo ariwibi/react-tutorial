@@ -16,15 +16,29 @@ import ReactForm from "./components/ReactForm";
 import PureComponent from "./components/KeepComponentPure";
 import ReactFetch from "./components/ReactFetch";
 import TodoList from "./components/TodoList";
+import Params from "./components/Params";
+import ParamsDetail from "./components/ParamsDetail";
+import ErrorPage from "./pages/ErrorPage";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
 export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <RootLayout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           index: true,
           element: <HomePage />,
+        },
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "dashboard",
+          element: <Dashboard />,
         },
         {
           path: "content",
@@ -61,6 +75,16 @@ export default function App() {
             {
               path: "todoList",
               element: <TodoList />,
+            },
+            {
+              path: "params",
+              element: <Params />,
+              children: [
+                {
+                  path: ":slug",
+                  element: <ParamsDetail />,
+                },
+              ],
             },
           ],
         },

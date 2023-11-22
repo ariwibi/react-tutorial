@@ -15,8 +15,8 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to={`/content`} className="nav-title">
-            About Me{" "}
+          <Link to={`/login`} className="nav-title">
+            Login
           </Link>
         </li>
       </ul>
